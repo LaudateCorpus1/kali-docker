@@ -1,0 +1,3 @@
+echo "[*] Removing '$1'..."
+docker image rm $1 &>/dev/null
+echo "[*] Removal completed."
