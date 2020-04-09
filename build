@@ -1,13 +1,5 @@
-echo "[*] Removing existing '$1', if any."
-docker image rm $1 &>/dev/null
-echo "[*] Removal completed."
-echo ""
 echo "[*] Building '$1'... This will take some time. Be patient."
 docker build -t $1 . &>/dev/null
 echo "[*] Build completed."
-echo ""
-echo "[*] Removing the leftovers..."
-docker image rm kalilinux/kali-rolling &>/dev/null
-echo "[*] Leftovers removed."
 echo ""
 echo "[*] Use 'docker images' and confirm that '$1' is listed."
