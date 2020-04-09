@@ -3,7 +3,7 @@
 FROM kalilinux/kali-rolling
 WORKDIR /root
 RUN echo "deb http://kali.download/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
-RUN apt-get -y update && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get -y clean $$ apt-get -y install nano curl wget netcat net-tools build-essential iputils-ping pciutils bash-completion
+RUN apt-get -y update && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get -y clean && apt-get -y install nano curl wget netcat net-tools build-essential iputils-ping pciutils bash-completion
 COPY packages.txt /root/
 RUN cat /root/packages.txt | xargs apt-get -y install
 RUN rm -rf /root/packages.txt
