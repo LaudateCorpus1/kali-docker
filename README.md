@@ -1,7 +1,7 @@
 # Kali Docker
 An easy-peasy script to get started with Kali Linux in Docker.
 
-**Blog Post:** [https://thirdbyte.github.io/blog/kali-linux-docker](https://thirdbyte.github.io/blog/kali-linux-docker)
+**Blog Post:** [https://gist.github.com/thirdbyte/b85b720a30b88e537c28851c86a462f7](https://gist.github.com/thirdbyte/b85b720a30b88e537c28851c86a462f7)
 
 **Notice:** Docker must be installed before hand.
 
