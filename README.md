@@ -8,6 +8,7 @@ An easy-peasy script to get started with Kali Linux in Docker.
 **Tested on:**
 + Kali Linux 2019.4
 + Ubuntu 18.04.3
++ Debian 10
 
 **Features:**
 + Builds an updated Kali Linux Docker image.
