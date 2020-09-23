@@ -1,1 +1,3 @@
-docker run -ti --rm --mount type=bind,src=$(pwd)/root,dst=/root $1
+xhost +local:root
+docker run --rm -it --net=host --privileged -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority -v $(pwd)/$1/:/root/ $1
+xhost -local:root
