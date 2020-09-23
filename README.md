@@ -1,9 +1,7 @@
 # Kali Docker
 An easy-peasy script to get started with Kali Linux in Docker.
 
-**Blog Post:** [https://gist.github.com/thirdbyte/b85b720a30b88e537c28851c86a462f7](https://gist.github.com/thirdbyte/b85b720a30b88e537c28851c86a462f7)
-
-**Notice:** Docker must be installed before hand.
+**Notice:** The script makes use of full container capabilities (`--privileged`) and opens up xhost server on the host which might be a bad idea from the security point of view. You must be held responsible for any implications that might occur due to this.
 
 **Tested on:**
 + Kali Linux 2019.4
@@ -13,7 +11,7 @@ An easy-peasy script to get started with Kali Linux in Docker.
 **Features:**
 + Builds an updated Kali Linux Docker image.
 + Installs the packages listed in `packages.txt` to the Docker image while building.
-+ The `root` directory act as a bridge between the Kali Linux Docker container and the host OS for file sharing and for persistence of storage.
++ The `image-name` directory act as a bridge between the Kali Linux Docker container and the host OS for file sharing and for persistence of storage.
 
 **Steps:**
 + `git clone https://github.com/thirdbyte/kali-docker`
