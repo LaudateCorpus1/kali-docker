@@ -4,11 +4,11 @@ WORKDIR /root/
 
 RUN echo "deb http://kali.download/kali kali-rolling main contrib non-free" > /etc/apt/sources.list
 
-RUN apt-get -y update && apt-get -y upgrade && \
+RUN apt-get -y clean && apt-get -y update && apt-get -y dist-upgrade && \
    DEBIAN_FRONTEND=noninteractive apt-get install -y \
    nano curl wget net-tools build-essential iputils-ping pciutils bash-completion && \
-   apt-get autoremove -y && \
-   apt-get clean -y
+   apt-get -y autoremove && \
+   apt-get -y clean
 
 COPY packages.txt /root/
 RUN cat /root/packages.txt | xargs apt-get -y install
