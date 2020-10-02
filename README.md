@@ -11,7 +11,7 @@ An easy-peasy script to get started with Kali Linux in Docker.
 **Features:**
 + Builds an updated Kali Linux Docker image.
 + Installs the packages listed in `packages.txt` to the Docker image while building.
-+ The `image-name` directory act as a bridge between the Kali Linux Docker container and the host OS for file sharing and for persistence of storage.
++ The `image-name` directory act as a volume mount between the Kali Linux Docker container and the host OS for file sharing and for persistence of storage. Inside the container, save anything to `/data` and access it on host in the `image-name` directory.
 
 **Steps:**
 + `git clone https://github.com/thirdbyte/kali-docker`
