@@ -1,8 +1,8 @@
-FROM kalilinux/kali
+FROM kalilinux/kali-rolling
 
 WORKDIR /root/
 
-RUN echo "deb http://archive.kali.org/kali kali-last-snapshot main contrib non-free" > /etc/apt/sources.list
+RUN echo "deb http://kali.download/kali kali-rolling main contrib non-free" > /etc/apt/sources.list
 
 RUN apt-get -y update && apt-get -y upgrade && \
    DEBIAN_FRONTEND=noninteractive apt-get install -y \
