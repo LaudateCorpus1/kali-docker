@@ -1,8 +1,0 @@
-nano
-curl
-wget
-net-tools
-build-essential
-iputils-ping
-pciutils
-bash-completion
