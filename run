@@ -1,5 +1,5 @@
 xhost +local:root
 clear
-docker run --rm -it --workdir="/root" --hostname=$1 --net=host --privileged -e DISPLAY --shm-size=3992488 -v $(pwd)/$1/:/root/ $1 /bin/bash
+docker run --rm --shm-size=4g -it --workdir="/root" --hostname=$1 --net=host --privileged -e DISPLAY -v $(pwd)/$1/:/root/ $1 /bin/bash
 xhost -local:root
 clear
