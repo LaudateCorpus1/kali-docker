@@ -1,0 +1,8 @@
+nano
+wget
+curl
+net-tools
+build-essential
+iputils-ping
+pciutils
+bash-completion
