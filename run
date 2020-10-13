@@ -1,3 +1,3 @@
 xhost +local:root
-docker run --rm -it --workdir="/data" --hostname=$1 --net=host --privileged -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority -v $(pwd)/$1/:/data/ $1 /bin/bash
+docker run --rm -it --workdir="/root" --hostname=$1 --net=host --privileged -e DISPLAY -v $(pwd)/$1/:/root/ $1 /bin/bash
 xhost -local:root
