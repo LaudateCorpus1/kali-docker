@@ -1,5 +1,5 @@
 echo "[*] Building '$1'. This will take some time. Be patient."
-docker build -t $1 . &>$1-build.log
+sudo docker build -t $1 . &>$1-build.log
 
 if grep -q "Successfully tagged" $1-build.log
 then
